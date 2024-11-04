@@ -1,0 +1,230 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3b888f8;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-side img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.right-side {
+        flex:1;
+        padding: 30px;
+        display:grid;
+        
+        justify-content: center;
+        background-color: #f37906;
+    }
+    
+
+
+
+
+
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #020202;
+    margin-bottom: 20px;
+}
+
+
+.login-form input {
+    width:75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 50%;
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #0a0a0a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+button[type="button"] {
+    background-color: white;
+    color: #000000;
+    border: 2px solid #070707;
+    align-items: center;
+}
+.button-container {
+    display:-ms-flexbox ;
+    padding-left: 25%;
+    justify-content: center;
+    align-items: center;
+    height: 12vh; /* Or any height depending on the layout */
+}
+
+.submit-hover-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submit-hover-button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media p {
+    margin-bottom: 10px;
+    color: #b1adad;
+}                        
+
+.social-media .icons a {
+    margin: 0 10px;
+    color: #000000;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side img {
+        height: 250px;
+    }
+
+    .right-side {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .login-form input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 200px;
+        font-size: 14px;
+        position: center;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: fadeIn 5s ease-in-out;
+}
+input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: border-color 5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="email"]:focus {
+    border-color: #d19a03;
+    box-shadow: 0 0 5px rgba(209, 154, 3, 0.5);
+    outline: none;
+}
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="password"]:focus {
+    border-color: #d19a03;
+    box-shadow: 0 0 5px rgba(209, 154, 3, 0.5);
+    outline: none;
+}
+input[type="submit"] {
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+}
+
+input[type="submit"]:focus {
+    border-color: #d19a03;
+    box-shadow: 0 0 5px rgba(209, 154, 3, 0.5);
+    outline: none;
+}
